@@ -1,4 +1,3 @@
-
 @import url(//db.onlinewebfonts.com/c/9b06ae83a4412168ed194a8ed31218c2?family=Mabry+Pro+Medium);
 @font-face {
   font-family: "Mabry Pro Medium";
@@ -184,135 +183,66 @@ header .navbar .services .prod .arrow {
 .navbar .services .prod  li:hover .htmlcss-arrow {
     transform: rotate(180deg);
 }
-
-
-.slider-container {
-  background-color: white;
- width:max-content;
-  display: block;
-  align-items: stretch;
-  justify-content:flex-end;
+@media only screen and (max-width: 1020px) {
+  html{
+      font-size: 14px;
+  }
+  .logo{
+    max-width: 6.80rem;
+    min-height: 2.75rem;
+    z-index: ;
+}
+.services{
+  display: none;
+}
+.login{
+  padding: 0rem 2.7rem;
+  min-height: 3.5rem;
   height: 100%;
+  font-size: 1rem;
 }
-
-.slider {
-  width: 100%;
-  max-width: 1600px;
-  height: 200px;
-  margin: 10px;
- border-image: space;
-  border-radius: 20px;
-  overflow:hidden;
-  position: relative;
-  border-radius: 10px;
-  padding-bottom: 300px;
-  margin-bottom: 60px ;
+.login #signin{
+  display: none;
 }
-.slides.img{
-    padding-bottom: 50px;
+.login #get{
+  padding: 0.45rem 4.5rem;
+        font-size: 1.15rem;
 }
-.slides {
+.navbar{
+  padding-right: 4rem;
+        padding-left: 4rem;
+}
+.maincontent{
   display: flex;
-  overflow-x: scroll;
-  position: relative;
-  scroll-behavior: smooth;
-  scroll-snap-type: x mandatory;
-  border-radius: 20px;
-  
-}
-
-.slide:nth-of-type(even) {
-  background-color: white;
-}
-
-.slide {
-  display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
-  flex-shrink: 0;
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+.bigtext h1{
+  font-size: 3.8rem;
+        display: flex;
+        max-width:760.41px;
+        width: 100%;
+        justify-content: center;
+}
+.bigtext{
+  max-width: 55rem;
+        width: 100%;
+        min-height: min-content;
+        margin-bottom: 5rem;
+}
+h3{
+  display: none;
+}
+#crypt{
+  display: flex;
   width: 100%;
-  height: 200px;
-  scroll-snap-align: center;
-  margin-right: 0px;
-  box-sizing: border-box;
-  background: white;
-  transform-origin: center center;
-  transform: scale(1);
-  overflow: hidden;
-  
+  justify-content: center;
+  margin-bottom: 3.43rem;
 }
 
-.slide__text {
-  font-size: 40px;
-  font-weight: bold;
-  font-family: sans-serif;
 }
-
-.slide a {
-  background: none;
-  border: none;
-}
-
-a.slide__prev,
-.slider::before {
-  transform: rotate(135deg);
-  -webkit-transform: rotate(135deg);
-  left: 5%;
-}
-
-a.slide__next,
-.slider::after {
-  transform: rotate(-45deg);
-  -webkit-transform: rotate(-45deg);
-  right: 5%;
-}
-
-.slider::before,
-.slider::after,
-.slide__prev,
-.slide__next {
-  position: absolute;
-  top: 48%;
-  width: 35px;
-  height: 35px;
-  border: solid black;
-  border-width: 0 4px 4px 0;
-  padding: 3px;
-  box-sizing: border-box;
-  
-}
-
-.slider::before,
-.slider::after {
-  content: "";
-  z-index: 1;
-  background: none;
-  pointer-events: none;
-}
-
-.slider__nav {
-  box-sizing: border-box;
-  position: absolute;
-  bottom: 5%;
-  left: 50%;
-  width: 200px;
-  margin-left: -100px;
-  text-align: center;
-}
-
-.slider__navlink {
-  display: inline-block;
-  height: 15px;
-  width: 15px;
-  border-radius: 50%;
-  background-color: black;
-  margin: 0 10px 0 10px;
-}
-
-
-
-
-
 
 
 
